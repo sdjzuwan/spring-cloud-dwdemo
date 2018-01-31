@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="false" scanPeriod="60 seconds" debug="false">
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="org.thymeleaf" level="info"/>
+    <logger name="org.apache.http" level="info"/>
+    <logger name="org.springframework" level="info"/>
+    <logger name="com.netflix.discovery.shared" level="info"/>
+    <logger name="com.netflix.eureka" level="info"/>
+    <logger name="org.springframework.beans.factory" level="WARN"/>
+    <logger name="org.springframework.web.context" level="WARN"/>
+    <!--<logger name="org.springframework.security.web.FilterChainProxy" level="info"/>
+    <logger name="org.springframework.security.web.authentication.AnonymousAuthenticationFilter" level="info"/>
+    <logger name="org.springframework.security.web.util.matcher.AntPathRequestMatcher" level="info"/>-->
+    <!--<logger name="org.springframework.security" level="debug"/>-->
+    <logger name="org.springframework.boot.autoconfigure.security" level="debug"/>
+    <logger name="org.springframework.session" level="debug"/>
+    <root level="debug">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

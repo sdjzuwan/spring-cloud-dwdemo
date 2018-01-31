@@ -1,0 +1,41 @@
+server:
+  context-path: /
+  port: 9000
+
+#服务器不需要注册，也不需要获取
+spring:
+  application:
+    name: zipkin-server
+  sleuth:
+    #自身信息不收集
+    enabled: false
+    sampler:
+    #收集比例
+      percentage: 1
+  rabbitmq:
+    port: 5672
+    host: localhost
+    
+    
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/zipkin?useUnicode=true&characterEncoding=utf8&useSSL=false
+#    username: zipkin
+#    password: zipkin
+#    driver-class-name: com.mysql.jdbc.Driver
+#zipkin:
+#  storage:
+#    type: mysql
+
+#eureka:
+#  instance:
+#    hostname: localhost
+#    prefer-ip-address: true
+#    lease-expiration-duration-in-seconds: 10
+#    lease-renewal-interval-in-seconds: 5
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+#    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#  server:
+#    enable-self-preservation: false
