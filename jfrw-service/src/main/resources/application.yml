@@ -32,7 +32,6 @@ eureka:
     healthcheck:
       enabled: true
   instance:
-      instance-id: jfrw-server
       prefer-ip-address: true   
       
       
