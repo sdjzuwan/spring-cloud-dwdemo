@@ -31,5 +31,4 @@ eureka:
     healthcheck:
       enabled: true
   instance:
-      instance-id: jfsp-server
       prefer-ip-address: true   
