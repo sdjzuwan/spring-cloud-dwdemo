@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: spring-cloud-ribbon-consumer
+Implementation-Version: 1.0
+Built-By: wan
+Implementation-Vendor-Id: com.spring.cloud
+Build-Jdk: 1.8.0_101
+Implementation-URL: http://projects.spring.io/spring-boot/ribbon-servi
+ ce/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
